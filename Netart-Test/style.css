@@ -1,0 +1,131 @@
+body{
+	padding: 0;
+	margin: 0;
+	display:flex;
+	flex-direction: column;
+	background: rgb(254,250,250);
+background: linear-gradient(180deg, rgba(254,250,250,1) 0%, rgba(237,213,169,1) 35%, rgba(237,208,168,1) 100%);
+}
+.header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:120px;
+}
+@media screen and (max-width: 992px){
+    .header img{
+	display:flex;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+}
+.midClass{
+	box-sizing: content-box;
+	clear: both;
+}
+.leftSide {
+  width: 25%;
+  float: left;
+padding: 40px 20px 0px 20px;
+margin-right: auto;
+margin-left: auto;
+  align-items: baseline;
+}
+.leftSide img
+{
+ position: relative;
+ top:30px;
+ left:35px;
+	}
+.main {
+margin-right: auto;
+margin-left: auto;
+ width: 60%;
+float: left;
+padding: 20px;
+}
+.main img{
+}
+.main h3{
+font-weight: bold;
+}
+@media screen and (max-width: 992px){
+	.midClass{
+	display: flex;
+	flex-direction: column-reverse;
+}
+.leftSide img{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	height: 180px;
+	padding: 0;
+	position: inherit; 
+}
+}
+.line{
+	margin:10px;
+	font-size: 13px;
+	text-align:center;
+} 
+.image{
+margin: inherit;
+}
+.image img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.image p{
+text-align: center;
+}
+@media screen and (max-width: 992px){
+	.image img{
+    width:70%;
+    height: inherit;
+	}
+}
+.beforeFooter {
+	border-top:2px solid #e1372e ;
+	margin: 10px;
+	padding: !important;
+	text-align: center;
+}
+.beforeFooter h4{
+	font-weight:700;
+}
+.beforeFooter p{
+	font-size: 14px;
+	font-weight:500;
+}
+.beforeFooter span{
+	color: #e1372e;
+	font-weight: 700;
+	font-size: 20px;
+}
+.footer{
+	padding:34px;
+	background-color: #e1372e;
+	display: flex;
+	text-align: center;
+	color: white;
+}
+.section {
+  flex: 1;
+  padding: 5px;
+}
+
+ .fa{
+ 	margin: 2px;
+ 	padding: 4px;
+	border-radius: 50px;
+	background-color: white;
+	color:#e1372e;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+}
